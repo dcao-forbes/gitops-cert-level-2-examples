@@ -15,7 +15,8 @@ spec:
                 - path: application-sets/example-apps/*
           # cluster generator, 'child' #2
           - clusters:
-              selector: *
+              selector:
+                matchLabels: *
 
   template:
     metadata:
